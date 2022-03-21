@@ -1,0 +1,41 @@
+//POST createTask
+###
+POST http://localhost:4000/api/tasks
+Content-type:application/json
+
+{
+    "title":"tarea 3",
+    "description":"trabajo de empresa",
+    "done":true
+    
+}
+
+// GET findAllTask
+###
+GET http://localhost:4000/api/tasks
+
+// GET findAllTask
+###
+GET http://localhost:4000/api/tasks?page=0&size=4
+
+// GET findAllDoneTask
+###
+GET http://localhost:4000/api/tasks/done
+
+
+// GET findOneTask
+###
+GET http://localhost:4000/api/tasks/62328ceb4fadf0fe7995fae3
+
+// DELETE deleteTask
+###
+DELETE http://localhost:4000/api/tasks/62328197154e04a591eac824
+
+// PUT upDateTask
+###
+PUT http://localhost:4000/api/tasks/62328521cba33ce0694188d3
+Content-Type: application/json
+
+{
+"title":"crear un sitio wed en wix"
+}
